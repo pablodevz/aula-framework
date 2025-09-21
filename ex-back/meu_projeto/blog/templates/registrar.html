@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Crie sua Conta{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Criar uma Nova Conta</h2>
+                    
+                    <form method="post">
+                        {% csrf_token %}
+
+                        {{ form.as_p }}
+                        
+                        <div class="d-grid gap-2 mt-4">
+                             <button type="submit" class="btn btn-primary w-100">Criar Conta</button>
+                        </div>
+                    </form>
+
+                    <hr>
+                    <div class="text-center">
+                        <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login aqui</a>.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

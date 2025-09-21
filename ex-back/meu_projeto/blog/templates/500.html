@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Erro no Servidor{% endblock %}
+
+{% block content %}
+<div class="container text-center py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="display-1 fw-bold text-warning">500</h1>
+            <h2 class="mb-4">Erro Interno no Servidor</h2>
+            <p class="lead text-muted mb-4">
+                Oops! Parece que algo deu errado em nossos sistemas. Pedimos desculpas pelo inconveniente.
+                Nossa equipe técnica já foi notificada e está trabalhando para corrigir o problema.
+            </p>
+            <a href="{% url 'home' %}" class="btn btn-primary btn-lg">
+                <i class="bi bi-house-door-fill"></i>
+                Voltar para a Página Inicial
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

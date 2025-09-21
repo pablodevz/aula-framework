@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Meu Perfil{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4">Meu Perfil</h1>
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Informações Pessoais</h5>
+                    <hr>
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        {{ info_form.as_p }}
+
+                        <div class="mb-3">
+                            <label class="form-label">Usuário</label>
+                            <input type="text" class="form-control" value="{{ user.username }}" disabled readonly>
+                            <div class="form-text">O nome de usuário não pode ser alterado.</div>
+                        </div>
+
+                        {% if user.email %}
+                        <div class="mb-3">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control" value="{{ user.email }}" disabled readonly>
+                            <div class="form-text">O nome email não pode ser alterado.</div>
+                        </div>
+                        {% endif %}
+
+                        <button type="submit" name="update_info" class="btn btn-primary">Salvar Informações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Alterar Senha</h5>
+                    <hr>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ password_form.as_p }}
+                        <button type="submit" name="change_password" class="btn btn-danger">Alterar Senha</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
