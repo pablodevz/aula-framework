@@ -1,2 +1,2 @@
 # ex-front
-Este diretório reunirá os exercícios de frontend a serem desenvolvidos em breve.
+Este diretório reúne todos os exercícios de front-end seguindo as atividades propostas em aula.
