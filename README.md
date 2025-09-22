@@ -35,7 +35,7 @@ Trabalhando com **relacionamentos entre classes**:
 - Criação do modelo **Endereco** com:
   - Rua, Número, Bairro, Cidade, Estado, CEP
 - Relacionamento entre **Pessoa** e **Endereco**
-- View listando **nome**, **usuário vinculado** e **endereço completo** no template `home.html`:contentReference[oaicite:2]{index=2}
+- View listando **nome**, **usuário vinculado** e **endereço completo** no template `home.html`
 
 ---
 
@@ -51,7 +51,7 @@ Trabalhando com **relacionamentos entre classes**:
 ## Conteúdo
 
 **Criar uma página HTML** utilizando as diretivas do Vue:
-- `v-if`, `v-show`, `v-for`, `v-on`, `v-bind`
+  - `v-if`, `v-show`, `v-for`, `v-on`, `v-bind`
 - **Página de Vendas** exibindo produtos e seus respectivos valores.
 - **Botões de ação** para adicionar itens ao **carrinho de compras**.
 - Exibição dinâmica da **opção de pagamento** somente quando houver pelo menos um item no carrinho.
