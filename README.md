@@ -1,4 +1,4 @@
-# 📂 Este diretório reúne todos os **exercícios de back-end e front-end** seguindo as atividades propostas em aula.  
+# Este diretório reúne todos os **exercícios de back-end e front-end** seguindo as atividades propostas em aula.  
 
 ---
 
