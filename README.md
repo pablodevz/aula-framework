@@ -4,7 +4,7 @@
 
 # 📂 ex-back
 
-## 📅 Conteúdo
+## Conteúdo
 
 Exercício 01
 Criação de **telas básicas com Django + Bootstrap**, incluindo:
@@ -45,3 +45,13 @@ Trabalhando com **relacionamentos entre classes**:
 - **SQLite** (padrão do Django) para persistência de dados
 
 ---
+
+# 📂 ex-front
+
+## Conteúdo
+
+**Criar uma página HTML** utilizando as diretivas do Vue:
+- `v-if`, `v-show`, `v-for`, `v-on`, `v-bind`
+- **Página de Vendas** exibindo produtos e seus respectivos valores.
+- **Botões de ação** para adicionar itens ao **carrinho de compras**.
+- Exibição dinâmica da **opção de pagamento** somente quando houver pelo menos um item no carrinho.
